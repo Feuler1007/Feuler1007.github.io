@@ -1,4 +1,4 @@
-[PotatoLock Corrigido 16-10.html](https://github.com/user-attachments/files/33568308/PotatoLock.Corrigido.16-10.html)
+[PotatoLock 1.0.html](https://github.com/user-attachments/files/33568721/PotatoLock.1.0.html)
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -482,8 +482,36 @@ details#customize{margin:0 0 14px}
   .stp{grid-template-columns:40px 1fr}
   .stp::before{left:19px}
 }
+
+/* Créditos e comunidades do projeto */
+.credits{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+  gap:12px 20px;padding:14px 16px;margin:12px 0;
+  background:linear-gradient(135deg,rgba(61,201,255,.08),rgba(19,23,28,.96));
+  border:1px solid rgba(61,201,255,.28);border-radius:var(--rd);
+  color:var(--tx-2);font-size:13px;
+}
+.credits .credit-names{color:var(--tx);font-weight:800}
+.credits .credit-links{display:flex;flex-wrap:wrap;gap:8px}
+.credits a{
+  display:inline-flex;align-items:center;min-height:36px;padding:7px 11px;
+  border:1px solid var(--ln);border-radius:9px;background:var(--pn2);
+  color:var(--br-3);font-weight:800;text-decoration:none;
+  overflow-wrap:anywhere;transition:background .2s,border-color .2s;
+}
+.credits a:hover{background:var(--pn);border-color:var(--br-2)}
+footer{max-width:1140px;margin:auto;padding:0 24px 28px}
+@media(max-width:520px){.credits{align-items:flex-start;flex-direction:column}footer{padding:0 16px 24px}}
+
 </style></head><body>
 <header>
+<div class="credits" aria-label="Créditos e comunidades do projeto">
+  <div><div class="credit-names">Criado por ChatoGPT (Lucas Neppel) e Feuler_ (Felipe Marcelino)</div><div>Projeto independente para Deadlock</div></div>
+  <nav class="credit-links" aria-label="Links da comunidade">
+    <a href="https://discord.gg/bGntkjfkz" target="_blank" rel="noopener noreferrer">Nosso Discord</a>
+    <a href="https://discord.gg/K7cTAUsQK" target="_blank" rel="noopener noreferrer">Discord de apoio e divulgação</a>
+  </nav>
+</div>
 <h1 class="cs">Editor de gameinfo.gi – Deadlock</h1>
 <p class="s">Escolha um preset (ou personalize), opcionalmente selecione um pacote de addons, importe o seu gameinfo.gi existente e gere a versão modificada. Tudo roda no seu navegador; nada é enviado pela internet.</p>
 <div class="rule"></div>
@@ -541,7 +569,15 @@ details#customize{margin:0 0 14px}
 </div>
 </div>
 </main>
-<footer></footer>
+<footer>
+<div class="credits" aria-label="Créditos finais e comunidades do projeto">
+  <div><div class="credit-names">© ChatoGPT (Lucas Neppel) e Feuler_ (Felipe Marcelino)</div><div>Obrigado a quem abriu as portas e ajudou na divulgação do projeto.</div></div>
+  <nav class="credit-links" aria-label="Links da comunidade">
+    <a href="https://discord.gg/bGntkjfkz" target="_blank" rel="noopener noreferrer">Nosso Discord</a>
+    <a href="https://discord.gg/K7cTAUsQK" target="_blank" rel="noopener noreferrer">Discord de apoio e divulgação</a>
+  </nav>
+</div>
+</footer>
 <script>
 // [id, grupo, rótulo, descrição, itens "chave=valor;Secao.chave=valor", faixa [min,max,passo,padrão,unidade]]
 // {v}=valor do slider, {a}=FOV convertido em r_aspectratio, {p}=2^valor
